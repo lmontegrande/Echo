@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: 33123785657752076}
   - component: {fileID: 65524901551910022}
   - component: {fileID: 23078083860941358}
+  - component: {fileID: 114653355389596226}
   m_Layer: 8
   m_Name: Cube (2)
-  m_TagString: EchoTarget
+  m_TagString: EchoCube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40,9 +41,10 @@ GameObject:
   - component: {fileID: 33437712068797466}
   - component: {fileID: 65677400982967306}
   - component: {fileID: 23890673144842692}
+  - component: {fileID: 114485020077000466}
   m_Layer: 8
   m_Name: Cube (5)
-  m_TagString: EchoTarget
+  m_TagString: EchoCube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58,9 +60,10 @@ GameObject:
   - component: {fileID: 33260917654683554}
   - component: {fileID: 65106938290429950}
   - component: {fileID: 23084652617541860}
+  - component: {fileID: 114180483889337428}
   m_Layer: 8
   m_Name: Cube (4)
-  m_TagString: EchoTarget
+  m_TagString: EchoCube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,9 +79,10 @@ GameObject:
   - component: {fileID: 33675084071226812}
   - component: {fileID: 65048429296475884}
   - component: {fileID: 23626522409044266}
+  - component: {fileID: 114464352695031834}
   m_Layer: 8
   m_Name: Cube (1)
-  m_TagString: EchoTarget
+  m_TagString: EchoCube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,9 +98,10 @@ GameObject:
   - component: {fileID: 33588715401126642}
   - component: {fileID: 65307421405182658}
   - component: {fileID: 23774190794858302}
+  - component: {fileID: 114667393249656224}
   m_Layer: 8
   m_Name: Cube (7)
-  m_TagString: EchoTarget
+  m_TagString: EchoCube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,9 +117,10 @@ GameObject:
   - component: {fileID: 33906627061826702}
   - component: {fileID: 65600417953222154}
   - component: {fileID: 23202367747897158}
+  - component: {fileID: 114456358579197410}
   m_Layer: 8
   m_Name: Cube (6)
-  m_TagString: EchoTarget
+  m_TagString: EchoCube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,9 +151,10 @@ GameObject:
   - component: {fileID: 33305132242354342}
   - component: {fileID: 65867399221774806}
   - component: {fileID: 23451433063154224}
+  - component: {fileID: 114365774381176546}
   m_Layer: 8
   m_Name: Cube
-  m_TagString: EchoTarget
+  m_TagString: EchoCube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -163,9 +170,10 @@ GameObject:
   - component: {fileID: 33311322649129132}
   - component: {fileID: 65982938957811314}
   - component: {fileID: 23620154187939072}
+  - component: {fileID: 114164361060152370}
   m_Layer: 8
   m_Name: Cube (3)
-  m_TagString: EchoTarget
+  m_TagString: EchoCube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -268,7 +276,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1885664596914570}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.04}
+  m_LocalPosition: {x: 0.43, y: -1.0805864, z: 9.536291}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4500092250834856}
@@ -719,3 +727,91 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114164361060152370
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1970796695604408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34078ee953be5d24fa5ba6cfe375d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114180483889337428
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1523443159539156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34078ee953be5d24fa5ba6cfe375d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114365774381176546
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1888510854740568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34078ee953be5d24fa5ba6cfe375d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114456358579197410
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1868039358632784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34078ee953be5d24fa5ba6cfe375d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114464352695031834
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1627801872236962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34078ee953be5d24fa5ba6cfe375d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114485020077000466
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1351515938031184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34078ee953be5d24fa5ba6cfe375d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114653355389596226
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1245059918632652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34078ee953be5d24fa5ba6cfe375d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114667393249656224
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1628192371977922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34078ee953be5d24fa5ba6cfe375d5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

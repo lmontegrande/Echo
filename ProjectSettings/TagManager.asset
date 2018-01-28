@@ -4,8 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - EchoTarget
   - Enemy
+  - echo
+  - EchoCube
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - EchoHittable
   - Enemy
   - Echo
-  - 
+  - Enemy
   - 
   - 
   - 

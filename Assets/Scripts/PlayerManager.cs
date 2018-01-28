@@ -15,6 +15,7 @@ public class PlayerManager : MonoBehaviour {
     {
         if(Input.GetButtonDown("Fire1")) {
             GameObject echoInstance = Instantiate(echoPrefab, transform.position, transform.rotation);
+            echoInstance.tag = "echo";
             echoInstance.GetComponent<Echo>().Launch();
         }
     }

@@ -8,11 +8,12 @@ public class GameManager : MonoBehaviour {
     {
         HideEchoTargets();
         HideEnemies();
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void HideEchoTargets()
     {
-        GameObject[] echoTargets = GameObject.FindGameObjectsWithTag("EchoTarget");
+        GameObject[] echoTargets = GameObject.FindGameObjectsWithTag("EchoCube");
         foreach(GameObject echoTarget in echoTargets)
         {
             echoTarget.GetComponent<MeshRenderer>().enabled = false;

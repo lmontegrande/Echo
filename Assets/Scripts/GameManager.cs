@@ -1,8 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
+
+    public string introSceneString;
 
     public void Start()
     {
@@ -27,5 +30,11 @@ public class GameManager : MonoBehaviour {
         {
             enemy.GetComponent<MeshRenderer>().enabled = false;
         }
+    }
+
+    public void LoadIntro()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        SceneManager.LoadScene(introSceneString);
     }
 }

@@ -539,7 +539,7 @@ GameObject:
   - component: {fileID: 82287380700301468}
   m_Layer: 0
   m_Name: EnemyFinalized
-  m_TagString: Untagged
+  m_TagString: EnemyContainer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3467,10 +3467,11 @@ MonoBehaviour:
   - {fileID: 114598771895635978}
   groanAudioClip: {fileID: 8300000, guid: 04a25d460188832459c60110fa32396f, type: 3}
   shacklesAudioClip: {fileID: 8300000, guid: c6e41365d779e804fbd83d3b351f8c06, type: 3}
-  attackTime: 3
-  attackSpeed: 3
+  attackTime: 2
+  attackSpeed: 1.5
   patrolSpeed: 1
   delayAttackTime: 1.5
+  isSilent: 0
 --- !u!114 &114869822674482428
 MonoBehaviour:
   m_ObjectHideFlags: 1

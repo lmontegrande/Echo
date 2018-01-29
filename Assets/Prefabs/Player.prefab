@@ -20,11 +20,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4091021348035934}
   - component: {fileID: 114481961963667422}
+  - component: {fileID: 114781139758980242}
   - component: {fileID: 136297169448954642}
   - component: {fileID: 23249256296884026}
   - component: {fileID: 33273820844223100}
   - component: {fileID: 54833876146047830}
-  - component: {fileID: 114781139758980242}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -188,6 +188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   echoPrefab: {fileID: 1537253348274064, guid: 5e507b53373258b41a561b2f895bc6ee, type: 2}
+  deathImage: {fileID: 0}
 --- !u!114 &114781139758980242
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -200,7 +201,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  strafeSpeed: 4
   turnSpeed: 5
+  sprintModifier: 1.5
 --- !u!124 &124885905470308110
 Behaviour:
   m_ObjectHideFlags: 1

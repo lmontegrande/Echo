@@ -15,6 +15,7 @@ public class Enemy : MonoBehaviour {
     public float attackSpeed = 5f;
     public float patrolSpeed = 3f;
     public float delayAttackTime = 1f;
+    public bool isSilent = false;
 
     private NavMeshAgent _navMeshAgent;
     private AudioSource _audioSource;
@@ -45,7 +46,14 @@ public class Enemy : MonoBehaviour {
     public void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
-            Debug.Log("YOU\"RE DEAD");
+            other.GetComponent<PlayerManager>().Die();
+    }
+
+    public void OnEcho()
+    {
+        if (currentAttackCoroutine != null)
+            StopCoroutine(currentAttackCoroutine);
+        currentAttackCoroutine = StartCoroutine(ReactAttack());
     }
 
     private void HandleState()
@@ -73,13 +81,6 @@ public class Enemy : MonoBehaviour {
         }
     }
 
-    private void OnEcho()
-    {
-        if (currentAttackCoroutine != null)
-            StopCoroutine(currentAttackCoroutine);
-        currentAttackCoroutine = StartCoroutine(ReactAttack());
-    }
-
     private void Patrol()
     {
         // Enter State
@@ -88,6 +89,7 @@ public class Enemy : MonoBehaviour {
             _navMeshAgent.isStopped = false;
             _navMeshAgent.SetDestination(wayPoints[GetNextWayPoint()].transform.position);
             _navMeshAgent.speed = patrolSpeed;
+            _audioSource.Stop();
         }
 
         // In State
@@ -127,7 +129,8 @@ public class Enemy : MonoBehaviour {
         {
             _navMeshAgent.isStopped = true;
             GetComponent<Rigidbody>().velocity = Vector3.zero;
-            GameObject.Find("AudioManager").GetComponent<AudioSource>().PlayOneShot(groanAudioClip);
+            if (!isSilent)
+                AudioManager.instance.GetComponent<AudioSource>().PlayOneShot(groanAudioClip);
         }
     }
 
@@ -140,12 +143,12 @@ public class Enemy : MonoBehaviour {
 
     private IEnumerator ReactAttack()
     {
-        float attackTimer = 0f;
+        float delayAttackTimer = 0f;
         currentState = State.FREEZE;
-        while (attackTimer < delayAttackTime)
+        while (delayAttackTimer < delayAttackTime)
         {
             yield return null;
-            attackTimer += Time.deltaTime;
+            delayAttackTimer += Time.deltaTime;
         }
         currentState = State.ATTACK;
     }
